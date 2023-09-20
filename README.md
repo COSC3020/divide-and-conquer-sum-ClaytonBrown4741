@@ -26,3 +26,8 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+EXPLANATION:
+In the repository, I have included a picture that details the written work that I completed.  
+At the moment, I am not completely sure if it is correct or not. Any feedback you can give on it would be greatly appreciated  
+
