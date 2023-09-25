@@ -42,6 +42,8 @@ to check whether we are in the base case yet.
 Using this, we can begin to answer the question. I used the following reasoning.  
 T(n) = 3T(n/3)+1  
 
+  $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$  
+  
      = 3(3T(n/9))+1+1  
      
      = 9T(n/9)+2  
@@ -59,8 +61,6 @@ T(n) = 3T(n/3)+1
      = $nT(1)+log{_3}{n}$  
        
      =$'n+\log{_3}{n} /in \Theta(n)'$  
-
-     $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$  
      
     So in the end, the answer is $\Theta(n)$. The reason for this is because, although we're  
     still using recursion, we're still just adding elements in an array. If we were sorting  
