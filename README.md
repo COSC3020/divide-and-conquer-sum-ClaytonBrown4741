@@ -58,7 +58,7 @@ T(n) = 3T(n/3)+1
 
      = $nT(1)+log{_3}{n}$  
        
-     =$'n+log{_3}{n} /in \Theta(n)'$  
+     =$'n+\log{_3}{n} /in \Theta(n)'$  
 
     So in the end, the answer is $\Theta(n)$. The reason for this is because, although we're  
     still using recursion, we're still just adding elements in an array. If we were sorting  
