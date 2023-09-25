@@ -42,29 +42,27 @@ to check whether we are in the base case yet.
 Using this, we can begin to answer the question. I used the following reasoning.  
 T(n) = 3T(n/3)+1   
   
-     = 3(3T(n/9))+1+1  
+= 3(3T(n/9))+1+1  
      
-     = 9T(n/9)+2  
+= 9T(n/9)+2  
      
-     = 9(3T(n/27))+1+2  
+= 9(3T(n/27))+1+2  
      
-     = 27T(n/27)+3  
+= 27T(n/27)+3  
      
-     = $3^(i)T(n/3^(i))+i$  
-
-    $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$   
+= $3^(i)T(n/3^(i))+i$    
     
-     (For the following, i = $log{_3}{n}$ because this gives us the base case for T  
+(For the following, i = $log{_3}{n}$ because this gives us the base case for T  
      
-     = $3^(log{_3}{n})T(n/3^(log{_3}{n})) + log{_3}{n}$  
+= $3^(log{_3}{n})T(n/3^(log{_3}{n})) + log{_3}{n}$  
 
-     = $nT(1)+log{_3}{n}$  
+= $nT(1)+log{_3}{n}$  
        
-     =$'n+\log{_3}{n} /in \Theta(n)'$  
+= $'n+\log{_3}{n} /in \Theta(n)'$  
      
-    So in the end, the answer is $\Theta(n)$. The reason for this is because, although we're  
-    still using recursion, we're still just adding elements in an array. If we were sorting  
-    them, then it would most likely take longer.
+So in the end, the answer is $\Theta(n)$. The reason for this is because, although we're  
+still using recursion, we're still just adding elements in an array. If we were sorting  
+them, then it would most likely take longer.
 
      
 
