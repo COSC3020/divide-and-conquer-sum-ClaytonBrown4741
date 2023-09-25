@@ -50,11 +50,11 @@ T(n) = 3T(n/3)+1
      
 = 27T(n/27)+3  
      
-= $3^(i)T(n/3^(i))+i$    
+= $3^iT(n/3^i)+i$    
     
 (For the following, i = $log{_3}{n}$ because this gives us the base case for T  
      
-= $3^(log{_3}{n})T(n/3^(log{_3}{n})) + log{_3}{n}$  
+= $3^log{_3}{n}T(n/3^log{_3}{n}) + log{_3}{n}$  
 
 = $nT(1)+log{_3}{n}$  
        
