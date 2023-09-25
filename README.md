@@ -28,6 +28,41 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
 EXPLANATION:
-In the repository, I have included a picture that details the written work that I completed.  
-At the moment, I am not completely sure if it is correct or not. Any feedback you can give on it would be greatly appreciated  
+To begin, we start with defining the recurrence relation. In this case, it would  
+look as follows:  
+T(n) = 1 if n <= 2. Otherwise, T(n)= 3T(n/3)+1  
+
+In this case, the base case is 1 because when n <= 2 we have to return the current  
+answer so that it can be added with the others. For the other case, the "3T" was  
+in order to account for the 3 recursive calls that are taken every time. The  
+"n/3" in it refers to the fact that we're dividing the size of the array by 3 every  
+time we call a recursive call. Finally, the last "+1" refers to the if statement used  
+to check whether we are in the base case yet.  
+
+Using this, we can begin to answer the question. I used the following reasoning.  
+T(n) = 3T(n/3)+1  
+
+     = 3(3T(n/9))+1+1  
+     
+     = 9T(n/9)+2  
+     
+     = 9(3T(n/27))+1+2  
+     
+     = 27T(n/27)+3  
+     
+     = $3^(i)T(n/3^(i))+i$  
+
+     (For the following, i = $log{_3}{n}$ because this gives us the base case for T  
+     
+     = $3^(log{_3}{n})T(n/3^(log{_3}{n})) + log{_3}{n}$  
+
+     = $nT(1)+log{_3}{n}$  
+       
+     = $n+log{_3}{n} /in \Theta(n)  
+
+    So in the end, the answer is $\Theta(n)$. The reason for this is because, although we're  
+    still using recursion, we're still just adding elements in an array. If we were sorting  
+    them, then it would most likely take longer.
+
+     
 
