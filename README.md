@@ -54,11 +54,11 @@ T(n) = 3T(n/3)+1
     
 (For the following, i = $log{_3}{n}$ because this gives us the base case for T  
      
-= $3^log{_3}{n}T(n/3^log{_3}{n}) + log{_3}{n}$  
+= $3^{log{_3}{n}}T(n/3^{log{_3}{n}}) + log{_3}{n}$  
 
 = $nT(1)+log{_3}{n}$  
        
-= $'n+\log{_3}{n} /in \Theta(n)'$  
+= $n+\log{_3}{n} \in \Theta(n)$  
      
 So in the end, the answer is $\Theta(n)$. The reason for this is because, although we're  
 still using recursion, we're still just adding elements in an array. If we were sorting  
