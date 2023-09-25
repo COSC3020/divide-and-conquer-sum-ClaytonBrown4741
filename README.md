@@ -25,9 +25,10 @@ relation for $T(n)$ as we did for merge sort (you can ignore constant factors)
 and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. Add your answer to this markdown file.
-
-EXPLANATION:
+most important part. Add your answer to this markdown file.  
+NOTE: THE FOLLOWING WEBSITE WAS VERY USEFUL FOR COMING UP WITH MY CODE:  
+https://www.geeksforgeeks.org/3-way-merge-sort/  
+EXPLANATION:  
 To begin, we start with defining the recurrence relation. In this case, it would  
 look as follows:  
 T(n) = 1 if n <= 2. Otherwise, T(n)= 3T(n/3)+1  
