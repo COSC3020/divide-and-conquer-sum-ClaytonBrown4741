@@ -12,8 +12,8 @@ function arrayBreakUp(lo, hi, tmp) {
 		//console.log(" ");
 		if (lo == hi)
 			return 0
-		else if (lo > hi)
-			return tmp[hi]
+		//else if (lo > hi)
+		//	return tmp[hi]
 		else if (lo < hi)
 			return tmp[lo]
 		else
