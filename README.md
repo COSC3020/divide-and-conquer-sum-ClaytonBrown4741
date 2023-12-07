@@ -1,7 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11765941&assignment_repo_type=AssignmentRepo)
 # Divide and Conquer Sum
 
-In the lectures, we've covered merge sort, which uses a divide-and-conquer
+In the lectures, we've covered merge sort, which uses a divide-and-conquer 
 approach to sort an array of values. There are many more algorithms that take
 such an approach. Implement a function that computes the sum of an array of
 integers using divide and conquer, using the template in `code.js`. Test your
